@@ -1,0 +1,19 @@
+* {
+primary: #c4c0ff;
+onPrimary: #292377;
+primaryContainer: #403b8e;
+onPrimaryContainer: #e3dfff;
+secondary: #c7c4dd;
+onSecondary: #302e42;
+secondaryContainer: #464559;
+onSecondaryContainer: #e3dff9;
+tertiary: #ebb9d1;
+onTertiary: #472538;
+tertiaryContainer: #603b4f;
+onTertiaryContainer: #ffd8eb;
+error: #ffb4a9;
+surface: #000000;
+onSurface: #ecdfde;
+surfaceVariant: #201a1a;
+onSurfaceVariant: #c8c5d0;
+}

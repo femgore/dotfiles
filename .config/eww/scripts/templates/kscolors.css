@@ -1,0 +1,925 @@
+:root{
+--primary: {{ primary }};
+--onPrimary: {{ onPrimary }};
+--primaryContainer: {{ primaryContainer }};
+--onPrimaryContainer: {{ onPrimaryContainer }};
+--secondary: {{ secondary }};
+--onSecondary: {{ onSecondary }};
+--secondaryContainer: {{ secondaryContainer }};
+--onSecondaryContainer: {{ onSecondaryContainer }};
+--tertiary: {{ tertiary }};
+--onTertiary: {{ onTertiary }};
+--tertiaryContainer: {{ tertiaryContainer }};
+--onTertiaryContainer: {{ onTertiaryContainer }};
+--error: {{ error }};
+--surface: {{ surface }};
+--onSurface: {{ onSurface }};
+--surfaceVariant: {{ surfaceVariant }};
+--onSurfaceVariant: {{ onSurfaceVariant }};
+--div-grey: transparent;
+--div-black: transparent;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2);
+}
+#menuItemContainer,
+.headerBar,
+.button,
+#policeButton,
+#updateAd {
+    background-color: #30303099;
+}
+
+#mainLogo {
+    content: url(https://cdn.discordapp.com/attachments/1127678544592507020/1150215186637140090/krunklogo.png);
+    transform: scale(0.7);
+    box-shadow: 0px 0px 40px 20px #000000;
+    background-color: #000000; opacity: 0.7;
+}
+
+.menBtnIcn {
+    color: var(--primary) !important;
+    transition-duration: 0.2s !important;
+}
+
+.menuItem:hover .menBtnIcn {
+    transform: scale(1.2);
+    color: var(--primary) !important;
+}
+
+#mainLogoFace,
+#seasonLabel,
+.menuItemTitle,
+#homeStoreAd,
+.youNewDiv,
+#topRightAdHolder,
+#topLeftAdHolder,
+#aHolder,
+#mapInfoHld,
+#streamContainer,
+.headerBarRight {
+    display: none !important;
+}
+
+#termsInfo:before {
+    position: fixed;
+    content: "CSS by       sadophrenia";
+    color: var(--primary);
+    background-color: transparent !important;
+    top: 10px;
+    right: 20px;
+    opacity: .5;
+    font-size: 25px;
+    visibility: visible;
+}
+
+#termsInfo:after {
+    position: fixed;
+    content: url(https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg);
+    width: 30px;
+    top: 6px;
+    right: 190px;
+    opacity: .5;
+    visibility: visible;
+}
+
+#termsInfo {
+    background-color: transparent !important;
+    width: 0px !important;
+    visibility: hidden;
+}
+
+#updateAd {
+    display: inline-block !important;
+}
+
+.helpTxtHol,
+#updateAdVersion {
+    color: var(--primary) !important;
+}
+
+#subLogoButtons,
+#menuClassContainer {
+    bottom: 18px !important;
+}
+
+#customizeButton {
+    font-size: 0px !important;
+    height: 18px;
+}
+
+#customizeButton span {
+    transform: translateX(-20px);
+}
+
+.button,
+#policeButton {
+    border-color: var(--primary) !important;
+}
+
+.button:hover,
+.button:active {
+    border: 4px solid var(--primary) !important;
+    color: white !important;
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+    transition-duration: 0.2s !important;
+}
+
+#menuClassSubtext,
+#menuClassNameTag,
+#menuClassName,
+.menuClassLevelBox,
+#menuClassIcn {
+    visibility: hidden !important;
+}
+
+#menuClassSubtext,
+#menuClassNameTag,
+.menuClassLevelBox,
+#menuClassIcn {
+    visibility: hidden;
+}
+
+#instructions {
+    visibility: hidden;
+}
+
+#instructions:after {
+    content: "click.";
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+}
+
+#spectButton>span {
+    display: none !important;
+}
+
+.settingsBtn,
+.hostToggle,
+.hostPresetBtn {
+    background-color: #313131 !important;
+    color: var(--primary) !important;
+}
+
+.switch {
+    width: 1.7rem;
+    height: 1.8rem
+}
+
+.slider,
+.slider2 {
+    background-color: #313131 !important;
+    border-radius: 3px !important;
+}
+
+.sliderVal {
+    background-color: transparent !important;
+    border: none !important;
+    width: 40px;
+    height: 26px;
+}
+
+.slider:before,
+.slider2:before {
+    display: none;
+}
+
+input:checked+.slider,
+input:checked+.slider2 {
+    background-color: var(--primary) !important;
+}
+
+.sliderM {
+    background-color: var(--primary) !important;
+    border-radius: 20px;
+    transform: translateY(50%);
+}
+
+.sliderM::-webkit-slider-thumb {
+    height: 25px;
+    background: var(--primary);
+}
+
+.inputGrey,
+.inputGrey2 {
+    background-color: transparent !important;
+    color: var(--primary);
+    border: none !important;
+    border-radius: 10px;
+}
+
+.inputGrey option,
+.inputGrey2 option {
+    background-color: #313131 !important;
+    color: var(--primary);
+    border: none !important;
+    border-radius: 10px;
+}
+
+#menuWindow.dark {
+    background-color: #171717;
+    border-radius: 10px !important;
+    border: 0px !important;
+    border: 2px solid var(--primary) !important;
+}
+
+#menuWindow.dark div {
+    text-shadow: none;
+    border: none;
+}
+
+.settingsHeader,
+#bindsHeader {
+    background-color: #171717 !important;
+}
+
+.settingsHeader {
+    margin-top: 30px;
+}
+
+.settingsHeader:after {
+    position: absolute !important;
+    content: url('https://i.ibb.co/h1bRmFx/ks-Gradient-Line.gif') !important;
+    transform: scale(2) translate(25%, -280%);
+}
+
+.instructionsTabs {
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.instructionsHeader {
+    margin-top: 9px !important;
+    box-shadow: none;
+    border-bottom: 3px solid var(--primary);
+}
+
+.instructionsHeader:after {
+    position: absolute !important;
+    content: url('https://i.ibb.co/h1bRmFx/ks-Gradient-Line.gif') !important;
+    transform: scale(1.335) translate(-53%, -70%);
+}
+
+#instructionsUpdate {
+    border-radius: 10px;
+    background-color: #313131 !important;
+    border: 3px solid var(--primary);
+    width: 800px
+}
+
+#instructionsUpdate>div {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+.instructionsTab {
+    color: white !important;
+    background-color: transparent !important;
+    border-top: 3px solid var(--primary);
+}
+
+.reportDC {
+    background-color: var(--primary) !important;
+    color: #313131;
+}
+
+.serverHeader {
+    background-color: transparent;
+}
+
+.serverHeader:after {
+    position: absolute !important;
+    content: url('https://i.ibb.co/h1bRmFx/ks-Gradient-Line.gif') !important;
+    transform: scale(1.9) translate(24%, -165%);
+}
+
+.mapFndB {
+    background-color: var(--primary) !important;
+    color: #313131;
+}
+
+#hideFull {
+    transform: translateX(26%) !important;
+}
+
+#hideFull span {
+    transform: translateY(-15%) !important;
+    width: 28px !important;
+}
+
+#hostMenuBtn {
+    display: none;
+}
+
+[style="color: #eb5656"] {
+    color: var(--primary) !important;
+}
+
+input[type=color] {
+	border: none;
+}
+
+.setSugBox2 {
+    border: 4px solid var(--primary) !important;
+    transform: translateX(6px);
+}
+
+#settSearch {
+    background-color: #313131;
+    color: var(--primary) !important;
+    transform: translateY(-2px);
+}
+
+.advancedSlider {
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #313131 !important;
+    border-radius: 3px !important;
+    font-size: 0px !important;
+}
+
+.advancedSlider:after {
+    display: none !important;
+}
+
+.advancedSlider:before {
+    border-radius: 3px !important;
+    display: none;
+}
+
+input:checked+.advancedSlider {
+    background-color: var(--primary) !important;
+    border-radius: 3px !important;
+}
+
+input:checked+.advancedSlider:before {
+    background-color: #313131 !important;
+    border-radius: 3px !important;
+    display: none;
+}
+
+.setBodH,
+.setHed,
+.settingTab,
+.dark .tabANew,
+.dark .tabANew:hover {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: 0 !important;
+}
+
+.sliderSml::before {
+    display: none;
+}
+
+.sliderSml {
+    transform: translateY(-24px);
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+    background-color: #313131;
+}
+
+input:checked+.sliderSml {
+    background-color: var(--primary) !important;
+}
+
+input:checked+.optCheck {
+    background-color: var(--primary);
+}
+
+.optCheck {
+    background-color: #313131;
+}
+
+.hostOpt {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+
+#chatInput::placeholder {
+    color: transparent;
+}
+
+#chatInput {
+    color: var(--primary) !important;
+    width: 300px;
+}
+
+#chatSwitch {
+    display: none;
+}
+
+#chatInputHolder::before {
+    content: "annoy people";
+    position: absolute;
+    color: var(--primary) !important;
+    bottom: 10px;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#chatInputHolder {
+    background: transparent;
+    color: var(--primary) !important;
+    transform: translateX(-11%) !important;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+.chatItem span[style*="color:#fc03ec"] {
+    color: var(--primary) !important;
+}
+
+#chatHolder:focus-within #chatInputHolder::before {
+    opacity: 0;
+}
+
+.chatItem[style] {
+    color: white !important;
+    width: -webkit-fill-available;
+    margin: 0;
+    padding: 5px 5px 2px 10px;
+    border-radius: 0;
+    font-size: 20px;
+    width: 300px;
+}
+
+.chatList {
+    transform: scale(1.45) !important;
+}
+
+#chatList {
+    border-radius: 0;
+    background: transparent;
+}
+
+#recTimer {
+    display: none;
+}
+
+i#voiceIcon.material-icons.voiceOff {
+    display: none;
+}
+
+.greyInlineInner {
+    background: 0;
+}
+
+#chatSwitch {
+    right: 8px;
+    position: relative;
+}
+
+#chatInput {
+    position: relative;
+    right: 26px;
+    top: 6px;
+}
+
+#chatInputHolder::before {
+    font-size: 15px !important;
+    left: 80px;
+}
+
+.greyInlineInnerMid {
+    background: 0;
+}
+
+a {
+    color: var(--primary) !important;
+}
+
+#profilePicM,
+#menuMiniProfilePic {
+    filter: none;
+    content: url(https://cdn.discordapp.com/attachments/1149413279962255484/1150217896694394931/357bcccaaa7d6b1353c63020c8d33919.png);
+}
+
+#menuMiniProfilePic {
+    transform: translateY(2px);
+}
+
+.progressBar {
+    border-radius: 20px;
+    background-color: #131313;
+}
+
+.progressBarInner {
+    border-radius: 20px;
+    background-image: url('https://i.ibb.co/h1bRmFx/ks-Gradient-Line.gif');
+    background-color: transparent;
+}
+
+.nHpBSeg {
+    background-color: var(--primary) !important;
+}
+
+#bottomLeftPlayer {
+    visibility: hidden;
+}
+
+#mailIcon {
+    transform: scale(0.7) translateY(2px);
+}
+
+#ammoMax,
+#ammoIcon {
+    display: none !important;
+    background-color: transparent !important;
+}
+
+#ammoVal,
+#timerVal {
+    background-color: transparent !important;
+    color: var(--primary) !important;
+    transform: translateY(1px);
+}
+
+#ammoHolder {
+    position: fixed;
+    top: calc(50% + 40px);
+    left: calc(50% - 40px);
+    transform: unset;
+    height: 8px;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    background-image: linear-gradient(to right, var(--primary), var(--primary));
+    background-color: transparent !important;
+}
+
+#reloadMsg {
+    border-radius: 10px !important;
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+#ammoVal {
+    font-size: 30px;
+    position: fixed;
+    bottom: 22px;
+    right: 404px;
+}
+
+#timerIcon,
+.weapIcon,
+.weapItem {
+    display: none !important;
+}
+
+#chatHolder {
+    bottom: 20px !important;
+}
+
+#bottomLeftHealthBar {
+    border-radius: 3px !important;
+    visibility: visible !important;
+    width: 300px !important;
+    bottom: 30px !important;
+    position: fixed;
+    right: 80px;
+    padding: 0px;
+    background-color: #313131;
+}
+
+.nHealthBarSeg {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    height: 30px;
+    display: flex;
+    margin: 0px -3.1px;
+}
+
+#bottomLeftHealth {
+    position: fixed;
+    visibility: visible !important;
+    right: 14px !important;
+    bottom: 22px !important;
+    font-size: 29px;
+    color: var(--primary);
+}
+
+#matchInfo.topLeftOld,
+#matchInfo {
+    display: none !important;
+}
+
+#fpsDisplay,
+#pingDisplay {
+    color: var(--primary);
+    text-align: left !important;
+    font-size: 17px !important;
+    transform: translateY(7px);
+}
+
+#ingameFPS {
+    color: var(--primary)!important;
+    text-shadow: none;
+}
+
+#pingText {
+    color: var(--primary)!important;
+    text-shadow: none;
+    font-size: 17px !important;
+}
+
+.carousel {
+    display: none;
+}
+
+
+#menuKRCount span {
+    color: var(--primary) !important;
+}
+
+#menuJNKCount:after {
+    content: " Junk";
+    color: var(--primary);
+}
+
+.junkInfo span {
+    display: none;
+}
+
+#menuKRCount {
+    transform: translateY(2px) !important;
+}
+
+#menuJNKCount {
+    transform: translateY(1px) !important;
+}
+
+.verticalSeparator {
+    background: #131313;
+    width: 3px;
+    height: 20px !important;
+    margin: 0 10px;
+    margin-bottom: 7px;
+}
+
+.classCard {
+    background-color: #313131;
+    border: 2px solid var(--primary) !important;
+}
+
+.custContainer {
+    margin-left: 5px;
+    margin-bottom: -2px;
+    border: 2px solid var(--primary) !important;
+}
+
+.classWeap,
+.classHP,
+.classHP span,
+.clsXPBarV {
+    display: none;
+}
+
+.className {
+    color: white !important;
+    transform: translate(-75px, -0px);
+}
+
+.classLvl {
+    color: var(--primary) !important;
+    transform: translate(220px, -80px);
+    font-size: 17px;
+}
+
+.clsXPBarC {
+    background-color: var(--primary) !important;
+    border-radius: 0px !important;
+}
+
+.classXPBar {
+    transform: translate(-8px, 12px);
+    background-color: black00 !important;
+    border-radius: 0px !important;
+}
+
+.classImgC {
+    display: none;
+}
+
+.selectorLabel {
+    display: none;
+}
+
+.selectorItem {
+    background-color: transparent !important;
+    height: 90% !important;
+}
+
+.selectedItem {
+    border: none !important;
+    background-color: #131313 !important;
+}
+
+#selectorContainer {
+    background-color: #313131 !important;
+    height: 90% !important;
+}
+
+.selectorItem .selectorIcon {
+    transform: translateY(8px) !important;
+}
+
+.custClear {
+    background-color: transparent;
+}
+
+.custClear .material-icons {
+    color: var(--primary) !important;
+}
+
+#customizeContainer {
+    width: 864px;
+    transform: translateX(-9px) !important;
+}
+
+#referralHeader {
+    display: none;
+}
+
+.accountInput {
+    background-color: #313131;
+    color: var(--primary);
+}
+
+.accountInput::placeholder {
+    color: var(--primary);
+}
+
+.endTableN[style="color:#fff"] {
+    color: var(--primary) !important;
+}
+
+.endTableN {
+    color: white !important;
+}
+
+#endTable td {
+    color: white !important;
+}
+
+#endTable td span {
+    color: var(--primary) !important;
+}
+
+.endCard {
+    border: 3px solid var(--primary) !important;
+}
+
+.leaderNameM,
+.newLeaderNameM,
+.leaderScore,
+.leaderCounter {
+    color: var(--primary) !important;
+    text-shadow: none;
+}
+
+.leaderName,
+.newLeaderName {
+    color: white !important;
+    text-shadow: none;
+}
+
+.centerLeaderContainer {
+    background-color: #313131;
+}
+
+#krTagHolder {
+    display: none !important;
+}
+
+.killStreakItem {
+    border-radius: 5px;
+    background-color: transparent;
+    border: 3px solid var(--primary);
+}
+
+#killStreakHolder {
+    position: fixed;
+    bottom: 120px;
+    right: 5px;
+    background-color: transparent;
+}
+
+.killStreakKey {
+    display: none !important;
+}
+
+#deathsVal,
+#killsVal,
+#livesDisp,
+#streakVal,
+#myScoreVal {
+    color: var(--primary) !important;
+    background-color: transparent !important;
+    text-align: center !important;
+    filter: drop-shadow(4px 4px black);
+    font-size: 30px !important;
+}
+
+#streakVal:after {
+    content: ' S' !important;
+    transform: translate(7px, -10px) !important;
+    font-size: 20px !important;
+}
+
+#killsVal:after {
+    content: ' K' !important;
+    transform: translate(7px, -10px) !important;
+    font-size: 20px !important;
+}
+
+#deathsVal:after {
+    content: ' D' !important;
+    transform: translate(7px, -10px) !important;
+    font-size: 20px !important;
+}
+
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#scoreCount .material-icons,
+#livesCount .material-icons {
+    visibility: hidden;
+    background-color: transparent !important;
+}
+
+#instructionsHolder {
+    display: none
+}
+
+.claimPop, #bundlePop {
+    display: none !important;
+}
+
+#popupBack {
+    backdrop-filter: hue-rotate(90deg) !important;
+}
+
+.matchVote {
+    text-shadow: none !important;
+    background: none !important;
+    border: 3px solid var(--primary) !important;
+    border-radius: 10px !important;
+}
+
+.matchVoteThumb:active {
+    filter: brightness(0.7) !important;
+    transition-duration: 0.2s;
+}
+
+.matchVoteThumb {
+    filter: brightness(0.2);
+    transition-duration: 0.2s;
+}
+
+.matchVoteThumb:hover {
+    transition-duration: 0.2s;
+    filter: brightness(0.5) !important;
+}
+
+.matchVoteMap {
+    top: 50px;
+    left: 6px;
+    font-size: 25px;
+    transform: none !important;
+}
+
+.matchVoteMode {
+    top: 15px;
+    left: 6px;
+    font-size: 20px;
+    transform: none !important;
+}
+
+.matchVoteTotal {
+    top: 10px;
+    font-size: 20px;
+    color: var(--primary) !important;
+}
+
+.matchVoteModifier {
+    display: none;
+}
+
+#endTimer {
+    color: var(--primary) !important;
+    text-shadow: none !important;
+}
+

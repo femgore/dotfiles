@@ -8,6 +8,6 @@ plus this is purely for arch linux + hyprland so idk if the other shit will work
 <img src="assets/4.png"/>
 
 # Installation
-- See the [Installation Page](https://github.com/femgore/dot./wiki/Installation)
+- See the [Installation Page](https://github.com/femgore/dotfiles/wiki/Installation)
 # Keybindings
-- See the [Cheat Sheet](https://github.com/femgore/dot./wiki/Cheat-Sheet)
+- See the [Cheat Sheet](https://github.com/femgore/dotfiles/wiki/Cheat-Sheet)

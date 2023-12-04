@@ -7,7 +7,7 @@ plus this is purely for arch linux + hyprland so idk if the other shit will work
 - **Control center**: quick access to everything you need (probably)
 - **Notifications**: notification daemon written on python with notifications center
 - **Launcher**: you can pin and unpin apps, just right click on them
-- **Generative**: i didnt know how to describe this one lmao basically it can gen wallpapers for you (see images 3 and 4 in Gallery)
+- **Generative**: i didnt know how to describe this one lmao basically it can make wallpapers for you (see images 3 and 4 in Gallery)
 
 # Gallery
 <img src="assets/1.png"/>
